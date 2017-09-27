@@ -10,5 +10,10 @@
   },
   "scripts": {
     "test": "./test.sh"
+  },
+  "version": "1.5",
+  "dist": {
+    "type": "zip",
+    "url": "https://github.com/ninghao/wp-sync-db/archive/1.5.zip"
   }
 }
