@@ -1260,6 +1260,7 @@ class WPSDB extends WPSDB_Base {
 		$val = trim( ini_get( 'post_max_size' ) );
 		$val = preg_replace('/[^0-9\.]/', '', $val);
 		$last = strtolower( $val[ strlen( $val ) - 1 ] );
+		$val = (int) $val;
 		switch ( $last ) {
 		case 'g':
 			$val *= 1024;
@@ -2411,6 +2412,7 @@ class WPSDB extends WPSDB_Base {
 		if( empty( $val ) ) return false;
 		$val = trim($val);
 		$last = strtolower($val[strlen($val)-1]);
+		$val = (int) $val;
 		switch($last) {
 			// The 'G' modifier is available since PHP 5.1.0
 			case 'g':
